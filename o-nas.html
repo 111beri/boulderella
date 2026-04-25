@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boulder Ella - moderní boulderingové centrum v Ostravě. Nabízíme tréninky pro začátečníky i pokročilé, špičkové vybavení a přátelskou komunitu.">
+  <meta name="keywords" content="bouldering, lezení, Boulder Ella, Ostrava, trénink lezení, lezecké vybavení">
+  <meta name="author" content="Berenika">
+  <title>O boulderingu - Boulder Ella</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffc0cb;
+    }
+    .navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link.active {
+      font-weight: 700;
+    }
+    .navbar-brand {
+      color: black !important;
+      font-weight: 700;
+    }
+
+    .breadcrumb {
+      background-color: #f8f9fa;
+      padding: 12px 20px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "›";
+      font-weight: bold;
+    }
+
+    .nav-tabs {
+      border-bottom: 2px solid #ffc0cb;
+    }
+    .nav-tabs .nav-link {
+      color: black;
+      border: none;
+      border-radius: 0;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #ffc0cb;
+      font-weight: 700;
+      border-bottom: 3px solid #ff69b4;
+    }
+    .nav-tabs .nav-link:hover {
+      border-color: transparent;
+      background-color: #ffe4e8;
+    }
+
+    .tab-content {
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+      min-height: 300px;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      color: black;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+        <li class="nav-item"><a class="nav-link active" href="o-nas.html"><i class="bi bi-info-circle"></i> O boulderingu</a></li>
+        <li class="nav-item"><a class="nav-link" href="trenink.html"><i class="bi bi-trophy"></i> Trénink</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html"><i class="bi bi-images"></i> Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="vybaveni.html"><i class="bi bi-tools"></i> Vybavení</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html"><i class="bi bi-envelope"></i> Kontakt</a></li>
+      </ul>
+    </div>
+
+    <a class="navbar-brand ms-auto" href="index.html">Boulder Ella</a>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb container-fluid">
+    <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+    <li class="breadcrumb-item active" aria-current="page">O boulderingu</li>
+  </ol>
+</nav>
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">Vše o boulderingu</h1>
+
+  <ul class="nav nav-tabs" id="boulderingTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="zaklady-tab" data-bs-toggle="tab" data-bs-target="#zaklady" type="button" role="tab">
+        <i class="bi bi-book"></i> Základy
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="techniky-tab" data-bs-toggle="tab" data-bs-target="#techniky" type="button" role="tab">
+        <i class="bi bi-gear"></i> Techniky
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="bezpecnost-tab" data-bs-toggle="tab" data-bs-target="#bezpecnost" type="button" role="tab">
+        <i class="bi bi-shield-check"></i> Bezpečnost
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="boulderingTabsContent">
+    <div class="tab-pane fade show active" id="zaklady" role="tabpanel">
+      <h3>Co je bouldering?</h3>
+      <p>
+        Bouldering je dynamická a intenzivní forma lezení bez použití lan a jištění, která se provozuje na nízkých skalách,
+        umělých stěnách nebo v halách s boulderingovými stěnami. Tento sport klade důraz na sílu, techniku, flexibilitu a kreativu.
+      </p>
+      <p>
+        Je vhodný pro všechny úrovně – od úplných začátečníků po profesionály. Díky krátkým tratím a absenci lana je rychlý,
+        intenzivní a poskytuje okamžitou zpětnou vazbu. Bezpečnost zajišťují dopadové žíněnky a správná technika pádu.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h5>Výhody boulderingu:</h5>
+          <ul>
+            <li>Rozvoj síly celého těla</li>
+            <li>Zlepšení koordinace a rovnováhy</li>
+            <li>Mentální výzva a řešení problémů</li>
+            <li>Sociální aspekt - komunita lezců</li>
+            <li>Přístupnost - nevyžaduje partnera</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Pro koho je vhodný:</h5>
+          <ul>
+            <li>Začátečníky bez zkušeností</li>
+            <li>Pokročilé lezce</li>
+            <li>Děti i dospělé</li>
+            <li>Jednotlivce i skupiny</li>
+            <li>Každého, kdo hledá nový sport</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="techniky" role="tabpanel">
+      <h3>Základní techniky lezení</h3>
+      <p>
+        Správná technika je klíčem k úspěchu v boulderingu. Zde jsou nejdůležitější techniky, které by měl každý lezec ovládat:
+      </p>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <h5><i class="bi bi-arrow-up-circle"></i> Přenášení váhy</h5>
+          <p>Naučte se efektivně přenášet váhu na nohy. 80% práce by měly dělat nohy, ne ruce.</p>
+          
+          <h5><i class="bi bi-hand-index-thumb"></i> Typy úchopů</h5>
+          <ul>
+            <li><strong>Crimp:</strong> úchop na špičky prstů</li>
+            <li><strong>Open hand:</strong> otevřená ruka</li>
+            <li><strong>Pinch:</strong> štípání chytu</li>
+            <li><strong>Sloper:</strong> úchop dlaní</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5><i class="bi bi-diagram-3"></i> Postavení těla</h5>
+          <p>Správné postavení těla minimalizuje únavu a maximalizuje dosah.</p>
+          
+          <h5><i class="bi bi-arrow-left-right"></i> Dynamické pohyby</h5>
+          <p>Dyno - dynamický skok na vzdálený chyt. Vyžaduje timing, sílu a odvahu.</p>
+          
+          <h5><i class="bi bi-bootstrap-reboot"></i> Heel hook & Toe hook</h5>
+          <p>Používání paty a špičky nohy pro udržení rovnováhy a stability.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="bezpecnost" role="tabpanel">
+      <h3>Bezpečnost při boulderingu</h3>
+      <p>
+        I když bouldering nevyžaduje lana, bezpečnost je stále na prvním místě. Dodržování základních pravidel minimalizuje riziko zranění.
+      </p>
+      
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle"></i> <strong>Důležité:</strong> Vždy kontrolujte okolí před zahájením lezení a zajistěte, aby nikdo nestál pod vámi.
+      </div>
+
+      <h5>Základní bezpečnostní pravidla:</h5>
+      <ol>
+        <li><strong>Zahřátí:</strong> Vždy si před lezením řádně zahřejte svalstvo a klouby</li>
+        <li><strong>Dopadové žíněnky:</strong> Ujistěte se, že jsou správně umístěny</li>
+        <li><strong>Technika pádu:</strong> Naučte se padat správně - na nohy s pokrčenými koleny</li>
+        <li><strong>Spotter:</strong> Požádejte někoho, aby vás chránil při pádu</li>
+        <li><strong>Poslouchejte tělo:</strong> Nepřetěžujte se, dejte si pauzu při únavě</li>
+        <li><strong>Postupný progres:</strong> Začínejte lehčími cestami a postupně zvyšujte obtížnost</li>
+      </ol>
+
+      <div class="mt-4 p-3 bg-light border-start border-5 border-danger">
+        <h6><i class="bi bi-heart-pulse"></i> Nejčastější zranění a prevence:</h6>
+        <ul class="mb-0">
+          <li><strong>Zranění prstů:</strong> Pravidelný odpočinek, správná technika úchopu</li>
+          <li><strong>Otřesy kotníků:</strong> Správná technika pádu, posilovací cvičení</li>
+          <li><strong>Přetížení ramen:</strong> Strečink, posilování antagonistických svalů</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Bouldering Web | Všechny práva vyhrazena
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

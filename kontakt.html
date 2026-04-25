@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boulder Ella - moderní boulderingové centrum v Ostravě. Nabízíme tréninky pro začátečníky i pokročilé, špičkové vybavení a přátelskou komunitu.">
+  <meta name="keywords" content="bouldering, lezení, Boulder Ella, Ostrava, trénink lezení, lezecké vybavení">
+  <meta name="author" content="Berenika">
+  <title>Kontakt - Boulder Ella</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffc0cb;
+    }
+    .navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link.active {
+      font-weight: 700;
+    }
+    .navbar-brand {
+      color: black !important;
+      font-weight: 700;
+    }
+
+    .breadcrumb {
+      background-color: #f8f9fa;
+      padding: 12px 20px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "›";
+      font-weight: bold;
+    }
+
+    .hero-section {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      text-align: left;
+      gap: 30px;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .hero-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1;
+    }
+    @media(min-width:992px){
+      .hero-row {
+        flex-direction: row;
+      }
+      .hero-content, .hero-image {
+        flex: 1;
+      }
+    }
+
+    .hero-image img {
+      max-width: 500px;
+      max-height: 350px;
+      width: 100%;
+      height: auto;
+      filter: brightness(0.7);
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      color: black;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-list li {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+    .contact-list a {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+        <li class="nav-item"><a class="nav-link" href="o-nas.html"><i class="bi bi-info-circle"></i> O boulderingu</a></li>
+        <li class="nav-item"><a class="nav-link" href="trenink.html"><i class="bi bi-trophy"></i> Trénink</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html"><i class="bi bi-images"></i> Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="vybaveni.html"><i class="bi bi-tools"></i> Vybavení</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontakt.html"><i class="bi bi-envelope"></i> Kontakt</a></li>
+      </ul>
+    </div>
+
+    <a class="navbar-brand ms-auto" href="index.html">Boulder Ella</a>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb container-fluid">
+    <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+  </ol>
+</nav>
+
+<div class="hero-section">
+  <div class="hero-row container">
+    <div class="hero-content col-12 col-lg-6">
+      <h1><i class="bi bi-envelope"></i> Kontakty</h1>
+      <p>
+        Máte-li dotazy nebo zájem o lekce a trénink, neváhejte nás kontaktovat.
+      </p>
+      <ul class="contact-list">
+        <li><i class="bi bi-telephone-fill"></i> <strong>Telefon:</strong> <a href="tel:+420123456789">+420 123 456 789</a></li>
+        <li><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> <a href="mailto:info@boulderella.cz">info@boulderella.cz</a></li>
+        <li><i class="bi bi-geo-alt-fill"></i> <strong>Adresa:</strong> Boulder gym, Lozivá 11, 700 30 Ostrava</li>
+        <li><i class="bi bi-facebook"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/boulderella" target="_blank" rel="noopener">Boulder Ella</a></li>
+        <li><i class="bi bi-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/boulderella" target="_blank" rel="noopener">@boulderella</a></li>
+      </ul>
+      <p>
+        Rádi vám poradíme s tréninkem, výběrem vybavení nebo termíny lekcí. Naše dveře jsou otevřené všem, kteří chtějí zlepšit své boulderingové dovednosti.
+        
+        
+      </p>
+      <p>Jedná se o studentský projekt, ne skutečné lezecké centrum.</p>
+    </div>
+
+    <div class="hero-image col-12 col-lg-6">
+      <img src="img/boulder15.jpg" alt="Kontakt bouldering">
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Bouldering Web | Všechny práva vyhrazena
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

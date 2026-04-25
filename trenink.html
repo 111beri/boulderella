@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boulder Ella - moderní boulderingové centrum v Ostravě. Nabízíme tréninky pro začátečníky i pokročilé, špičkové vybavení a přátelskou komunitu.">
+  <meta name="keywords" content="bouldering, lezení, Boulder Ella, Ostrava, trénink lezení, lezecké vybavení">
+  <meta name="author" content="Berenika">
+  <title>Trénink - Boulder Ella</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffc0cb;
+    }
+    .navbar .nav-link {
+      color: black !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link.active {
+      font-weight: 700;
+    }
+    .navbar-brand {
+      color: black !important;
+      font-weight: 700;
+    }
+
+    .breadcrumb {
+      background-color: #f8f9fa;
+      padding: 12px 20px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "›";
+      font-weight: bold;
+    }
+
+    .hero-section {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      text-align: left;
+      gap: 30px;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .hero-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1;
+    }
+    @media(min-width:992px){
+      .hero-row {
+        flex-direction: row;
+      }
+      .hero-content, .hero-image {
+        flex: 1;
+      }
+    }
+
+    .hero-image img {
+      max-width: 500px;
+      max-height: 350px;
+      width: 100%;
+      height: auto;
+      filter: brightness(0.7);
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      color: black;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
+        <li class="nav-item"><a class="nav-link" href="o-nas.html"><i class="bi bi-info-circle"></i> O boulderingu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="trenink.html"><i class="bi bi-trophy"></i> Trénink</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html"><i class="bi bi-images"></i> Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="vybaveni.html"><i class="bi bi-tools"></i> Vybavení</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html"><i class="bi bi-envelope"></i> Kontakt</a></li>
+      </ul>
+    </div>
+
+    <a class="navbar-brand ms-auto" href="index.html">Boulder Ella</a>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb container-fluid">
+    <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Trénink</li>
+  </ol>
+</nav>
+
+<div class="hero-section">
+  <div class="hero-row container">
+    <div class="hero-content col-12 col-lg-6">
+      <h1>Trénink pro každého lezce</h1>
+      <p>
+        Boulderingový trénink je zaměřen především na sílu, techniku a koordinaci. 
+        Na rozdíl od klasického lezení na laně je bouldering intenzivnější, kratší a vyžaduje
+        rychlé rozhodování i kreativní řešení pohybů.
+      </p>
+      <p>
+        Začíná se obvykle zahřátím těla, mobilitou a lehkým lezením. Důležitá je také práce 
+        s technikou nohou, správné přenášení váhy a stabilita těla.
+      </p>
+      <p>
+        Pokročilejší lezci často trénují dynamické skoky, koordinované pohyby, visy na lištách,
+        silové kroky a specifické situace, které se v boulderingu běžně objevují.
+      </p>
+    </div>
+
+    <div class="hero-image col-12 col-lg-6">
+      <img src="img/boulder6.jpg" alt="Trénink boulderingu">
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5">
+  <h2 class="text-center mb-4"><i class="bi bi-table"></i> Lezecké bouldrové cesty</h2>
+  <table id="boulderTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Název cesty</th>
+        <th>Obtížnost</th>
+        <th>Lokace</th>
+        <th>Délka (m)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>001</td><td>Overhang Monster</td><td>6B</td><td>Gym A</td><td>12</td></tr>
+      <tr><td>002</td><td>Slab Master</td><td>5C</td><td>Gym A</td><td>8</td></tr>
+      <tr><td>003</td><td>Dyno King</td><td>6C</td><td>Gym B</td><td>10</td></tr>
+      <tr><td>004</td><td>Crimpy Fun</td><td>6A</td><td>Gym B</td><td>9</td></tr>
+      <tr><td>005</td><td>Balance Challenge</td><td>5B</td><td>Gym C</td><td>7</td></tr>
+      <tr><td>006</td><td>Power Move</td><td>7A</td><td>Gym C</td><td>11</td></tr>
+      <tr><td>007</td><td>Technical Slab</td><td>6A</td><td>Gym A</td><td>8</td></tr>
+      <tr><td>008</td><td>Heel Hook Fun</td><td>6B</td><td>Gym D</td><td>12</td></tr>
+      <tr><td>009</td><td>V-Block</td><td>6C</td><td>Gym B</td><td>10</td></tr>
+      <tr><td>010</td><td>Crux Move</td><td>6A</td><td>Gym B</td><td>9</td></tr>
+      <tr><td>011</td><td>Overhang Pro</td><td>6B</td><td>Gym D</td><td>12</td></tr>
+      <tr><td>012</td><td>Slab Easy</td><td>5B</td><td>Gym C</td><td>7</td></tr>
+      <tr><td>013</td><td>Power Jump</td><td>7A</td><td>Gym C</td><td>11</td></tr>
+      <tr><td>014</td><td>Crimpy Delight</td><td>6C</td><td>Gym A</td><td>10</td></tr>
+      <tr><td>015</td><td>Balance Slab</td><td>5C</td><td>Gym A</td><td>8</td></tr>
+      <tr><td>016</td><td>Heel Hook King</td><td>6B</td><td>Gym B</td><td>12</td></tr>
+      <tr><td>017</td><td>Dyno Fun</td><td>6C</td><td>Gym C</td><td>10</td></tr>
+      <tr><td>018</td><td>Crux Challenge</td><td>6A</td><td>Gym C</td><td>9</td></tr>
+      <tr><td>019</td><td>Overhang Extreme</td><td>7B</td><td>Gym D</td><td>13</td></tr>
+      <tr><td>020</td><td>Slab Mastery</td><td>6B</td><td>Gym B</td><td>8</td></tr>
+      <tr><td>021</td><td>Crimpy Beast</td><td>6A</td><td>Gym C</td><td>9</td></tr>
+      <tr><td>022</td><td>Dyno Blast</td><td>6C</td><td>Gym A</td><td>10</td></tr>
+      <tr><td>023</td><td>Balance Pro</td><td>5B</td><td>Gym A</td><td>7</td></tr>
+      <tr><td>024</td><td>Heel Hook Master</td><td>6B</td><td>Gym B</td><td>12</td></tr>
+      <tr><td>025</td><td>Overhang Fun</td><td>6A</td><td>Gym B</td><td>12</td></tr>
+      <tr><td>026</td><td>Slab Easy</td><td>5C</td><td>Gym D</td><td>8</td></tr>
+      <tr><td>027</td><td>Power King</td><td>7A</td><td>Gym B</td><td>11</td></tr>
+      <tr><td>028</td><td>Crimpy Moves</td><td>6C</td><td>Gym A</td><td>10</td></tr>
+      <tr><td>029</td><td>Balance King</td><td>5B</td><td>Gym C</td><td>7</td></tr>
+      <tr><td>030</td><td>Heel Hook Fun</td><td>6A</td><td>Gym C</td><td>12</td></tr>
+      <tr><td>031</td><td>Dyno Extreme</td><td>6C</td><td>Gym D</td><td>10</td></tr>
+      <tr><td>032</td><td>Crux King</td><td>6B</td><td>Gym B</td><td>9</td></tr>
+      <tr><td>033</td><td>Overhang Master</td><td>7A</td><td>Gym B</td><td>13</td></tr>
+      <tr><td>034</td><td>Slab Beast</td><td>6C</td><td>Gym A</td><td>8</td></tr>
+      <tr><td>035</td><td>Crimpy Challenge</td><td>6B</td><td>Gym B</td><td>10</td></tr>
+      <tr><td>036</td><td>Balance Fun</td><td>5C</td><td>Gym C</td><td>7</td></tr>
+      <tr><td>037</td><td>Heel Hook Extreme</td><td>6A</td><td>Gym C</td><td>12</td></tr>
+      <tr><td>038</td><td>Dyno King</td><td>6C</td><td>Gym A</td><td>10</td></tr>
+      <tr><td>039</td><td>Crux Beast</td><td>6B</td><td>Gym A</td><td>9</td></tr>
+      <tr><td>040</td><td>Overhang Fun</td><td>7A</td><td>Gym B</td><td>13</td></tr>
+      <tr><td>041</td><td>Slab Extreme</td><td>6C</td><td>Gym B</td><td>8</td></tr>
+      <tr><td>042</td><td>Crimpy Pro</td><td>6B</td><td>Gym C</td><td>10</td></tr>
+      <tr><td>043</td><td>Balance Beast</td><td>5C</td><td>Gym D</td><td>7</td></tr>
+      <tr><td>044</td><td>Heel Hook Challenge</td><td>6A</td><td>Gym D</td><td>12</td></tr>
+      <tr><td>045</td><td>Dyno Pro</td><td>6C</td><td>Gym A</td><td>10</td></tr>
+      <tr><td>046</td><td>Crux Fun</td><td>6B</td><td>Gym A</td><td>9</td></tr>
+      <tr><td>047</td><td>Overhang King</td><td>7A</td><td>Gym B</td><td>13</td></tr>
+      <tr><td>048</td><td>Slab Challenge</td><td>6C</td><td>Gym C</td><td>8</td></tr>
+      <tr><td>049</td><td>Crimpy Fun</td><td>6B</td><td>Gym C</td><td>10</td></tr>
+      <tr><td>050</td><td>Balance Master</td><td>5C</td><td>Gym D</td><td>7</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  &copy; 2025 Bouldering Web | Všechny práva vyhrazena
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#boulderTable').DataTable({
+      "pageLength": 10,
+      "lengthMenu": [5, 10, 25, 50],
+      "ordering": true,
+      "language": {
+        "search": "Hledat:",
+        "lengthMenu": "Zobrazit _MENU_ záznamů na stránku",
+        "info": "Zobrazeno _START_ až _END_ z _TOTAL_ záznamů",
+        "infoEmpty": "Zobrazeno 0 až 0 z 0 záznamů",
+        "infoFiltered": "(filtrováno z celkem _MAX_ záznamů)",
+        "paginate": {
+          "first": "První",
+          "last": "Poslední",
+          "next": "Další",
+          "previous": "Předchozí"
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
