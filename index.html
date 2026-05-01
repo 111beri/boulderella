@@ -1,99 +1,41 @@
-
 <!doctype html>
 <html lang="cs">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Boulder Ella - moderní boulderingové centrum v Ostravě. Nabízíme tréninky pro začátečníky i pokročilé, špičkové vybavení a přátelskou komunitu.">
-  <meta name="keywords" content="bouldering, lezení, Boulder Ella, Ostrava, trénink lezení, lezecké vybavení">
-  <meta name="author" content="Berenika">
   <title>Bouldering Web</title>
+  
+  <!-- Preconnect pro rychlejší načtení fontů -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" media="print" onload="this.media='all'">
 
   <style>
-    body {
-      font-family: 'Oswald', sans-serif;
-    }
-
-    .navbar {
-      background-color: #ffc0cb;
-    }
-
-    .navbar .nav-link {
-      color: black !important;
-      font-weight: 500;
-    }
-
-    .navbar .nav-link.active {
-      font-weight: 700;
-    }
-
-    .navbar-brand {
-      color: black !important;
-      font-weight: 700;
-    }
-
-    .breadcrumb {
-      background-color: #f8f9fa;
-      padding: 12px 20px;
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-
-    .breadcrumb-item + .breadcrumb-item::before {
-      content: "›";
-      font-weight: bold;
-    }
-
-    .carousel-item {
-      height: 72vh;
-    }
-
-    .carousel-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .carousel-caption {
-      color: white;
-      text-shadow: 3px 3px 6px black;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      padding: 10px;
-    }
-
-    .carousel-caption h5 {
-      font-size: 30px;
-      font-weight: 700;
-    }
-
-    .carousel-caption p {
-      font-size: 18px;
-    }
-
-    footer {
-      background-color: #ffc0cb;
-      color: black;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 50px;
-    }
+    body { font-family: 'Oswald', sans-serif; }
+    .navbar { background-color: #ffc0cb; }
+    .navbar .nav-link { color: black !important; font-weight: 500; }
+    .navbar .nav-link.active { font-weight: 700; }
+    .navbar-brand { color: black !important; font-weight: 700; }
+    .breadcrumb { background-color: #f8f9fa; padding: 12px 20px; margin-bottom: 0; border-radius: 0; }
+    .breadcrumb-item + .breadcrumb-item::before { content: "›"; font-weight: bold; }
+    .carousel-item { height: 72vh; background: #eee; }
+    .carousel-img { width: 100%; height: 100%; object-fit: cover; }
+    .carousel-caption { color: white; text-shadow: 3px 3px 6px black; left: 50%; transform: translateX(-50%); text-align: center; padding: 10px; }
+    .carousel-caption h5 { font-size: 30px; font-weight: 700; }
+    footer { background-color: #ffc0cb; color: black; text-align: center; padding: 15px 0; margin-top: 50px; }
   </style>
 </head>
-
 <body>
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> Domů</a></li>
@@ -104,84 +46,37 @@
         <li class="nav-item"><a class="nav-link" href="kontakt.html"><i class="bi bi-envelope"></i> Kontakt</a></li>
       </ul>
     </div>
-
     <a class="navbar-brand ms-auto" href="index.html">Boulder Ella</a>
-
   </div>
 </nav>
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb container-fluid">
-    <li class="breadcrumb-item active" aria-current="page">
-      <i class="bi bi-house-door"></i> Úvod
-    </li>
-  </ol>
-</nav>
-
-<!-- CAROUSEL -->
-<div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="3000">
-  
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
-
     <div class="carousel-item active">
-      <img src="img/boulder1.jpg" class="d-block w-100 carousel-img" alt="Bouldering1">
+      <!-- První obrázek: fetchpriority="high" a bez loading="lazy" pro rychlý start -->
+      <img src="img/boulder1.jpg" width="1920" height="1080" class="d-block w-100 carousel-img" alt="První kroky na stěně" fetchpriority="high">
       <div class="carousel-caption">
         <h5>První kroky na stěně</h5>
         <p>Vyzkoušej si bouldering a objev nový sport.</p>
       </div>
     </div>
-
     <div class="carousel-item">
-      <img src="img/boulder4.jpg" class="d-block w-100 carousel-img" alt="Bouldering4">
+      <img src="img/boulder4.jpg" width="1920" height="1080" class="d-block w-100 carousel-img" alt="Lezení bez lan" loading="lazy">
       <div class="carousel-caption">
         <h5>Lezení bez lan</h5>
-        <p>Zažij volnost pohybu a řeš každou cestu jako výzvu.</p>
+        <p>Zažij volnost pohybu.</p>
       </div>
     </div>
-
-    <div class="carousel-item">
-      <img src="img/boulder5.jpg" class="d-block w-100 carousel-img" alt="Bouldering5">
-      <div class="carousel-caption">
-        <h5>Buduj sílu i vytrvalost</h5>
-        <p>Trénink, který tě posune na další úroveň.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="img/boulder2.jpg" class="d-block w-100 carousel-img" alt="Bouldering2">
-      <div class="carousel-caption">
-        <h5>Trénink a techniky</h5>
-        <p>Zlepšete svou sílu a vytrvalost.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="img/boulder3.jpg" class="d-block w-100 carousel-img" alt="Bouldering3">
-      <div class="carousel-caption">
-        <h5>Vybavení a bezpečnost</h5>
-        <p>Vybírejte správně boty a pytlíky s magnéziem.</p>
-      </div>
-    </div>
-
   </div>
-
-  <!-- OVLÁDÁNÍ -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
-
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
-
 </div>
 
-<footer>
-  &copy; 2025 Bouldering Web | Všechny práva vyhrazena
-</footer>
-
-<script src="js/bootstrap.bundle.min.js"></script>
+<footer>&copy; 2025 Bouldering Web</footer>
+<script src="js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
-
-
